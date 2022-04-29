@@ -1,0 +1,40 @@
+body {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.bg {
+	margin: 28px 35px;
+	padding: 20px 10px;
+	margin-bottom: 0;
+	background-color: rgb(243, 209, 214);
+	border: 1px solid rgb(224, 56, 56);
+}
+
+.signup {
+	background-color: #222535;
+	border-color: #dd8705;
+}
+
+.signup .panel-body label {
+	color: #fdfd2e;
+	font-weight: normal;
+}
+
+.signup .panel-heading {
+	padding: 15px;
+	padding-bottom: 8px;
+	background-color: #dd8705;
+	color: #fdfd2e;
+}
+
+.signup .panel-footer {
+	background-color: #dd8705;
+	padding: 0.5px 2px;
+}
+.btn-submit {
+	margin-right: 5px;
+}
+
+.mb-4 {
+	margin-bottom: 30px;
+}

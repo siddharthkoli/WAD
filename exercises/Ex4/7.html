@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset=utf-8 />
+    <title>Q7</title>
+
+    <style>
+        body {
+            margin: 25px;
+            background-color: bisque;
+        }
+
+        #firstNum,
+        #secondNum {
+            padding: 7px;
+            margin: 6px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        Enter amount : <input type="text" id="amt" /><br>
+        <input type="button" onClick="discount()" Value="Calculate Discount" />
+    </form>
+    <p>Total Amount : <br>
+        <span id="result"></span>
+    </p>
+
+
+</body>
+
+<script>
+    function discount() {
+        var num1;
+        num1 = Number(document.getElementById("amt").value);
+
+        if (num1 >= 1000) {
+            num1 = num1 - ((num1 * 15) / 100)
+            document.getElementById("result").innerHTML = num1;
+        }
+        else if (num1 < 1000) {
+            num1 = num1 - ((num1 * 5) / 100)
+            document.getElementById("result").innerHTML = num1;
+        }
+
+    }
+
+</script>
+
+</html>

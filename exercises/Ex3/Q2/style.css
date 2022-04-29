@@ -1,0 +1,67 @@
+body {
+    background-image: url('./car/plain-colour-website-textures-pattern-2560x1600-wallpaper214035.jpg');
+    font-family: cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin: auto;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+#navbar-second {
+    background-color: rgb(255, 255, 162);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navbar-second li {
+    list-style: none;
+    display: inline;
+    border-width: 3px;
+    outline-color: black;
+    border-style: outset;
+    padding: 5px;
+    color: rgb(31, 31, 112);
+    background-color: white;
+    font-style: oblique;
+    border-radius: 5px;
+
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 3l̥ō00px;
+}
+
+#sidebar ul {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+#sidebar li {
+    padding-top: 30px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset=utf-8 />
+    <title>Q3</title>
+
+    <style>
+        body {
+            margin: 25px;
+            background-color: bisque;
+        }
+
+        #firstNum,
+        #secondNum {
+            padding: 7px;
+            margin: 6px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        Enter 1st Number : <input type="text" id="firstNum" /><br>
+        Enter 2nd Number: <input type="text" id="secondNum" /><br>
+        <select name="options" id="options" onchange="calculate()">
+            <option value="sum">Sum</option>
+            <option value="sub">Sub</option>
+            <option value="mul">Mul</option>
+            <option value="div">Div</option>
+        </select>
+
+    </form>
+    <p>Output : <br>
+        <span id="result"></span>
+    </p>
+
+</body>
+
+<script>
+    function calculate() {
+        let a = parseInt(document.getElementById("firstNum").value);
+        let b = parseInt(document.getElementById("secondNum").value);
+        let val = document.getElementById("options").value;
+        if (val == "sum") {
+            document.getElementById("result").innerHTML = a + b;
+        }
+        else if (val == "sub") {
+            document.getElementById("result").innerHTML = a - b;
+        }
+        else if (val == "mul") {
+            document.getElementById("result").innerHTML = a * b;
+        }
+        else if (val == "div") {
+            document.getElementById("result").innerHTML = a / b;
+        }
+
+    }
+
+</script>
+
+</html>

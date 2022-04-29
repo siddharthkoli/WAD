@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <style>
+        table {
+            border: 2px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            padding-left: 10px;
+        }
+
+        tr {
+            background-color: rgb(107, 207, 247);
+            padding: 30px;
+        }
+
+        button {
+            height: 50px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(252, 240, 237);">
+    <form>
+        <table>
+            <tr>
+                <td colspan="2" style="background-color: rgb(242, 243, 189);">
+                    <p style="color: red; text-align: center; font-size: 30px;"><b>User Form</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Enter Name</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Enter Password</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Enter Address</label></td>
+                <td><textarea style="height: 70px; width: auto;"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Select Game</label></td>
+                <td><input type="checkbox">Hockey<br>
+                    <input type="checkbox">Football<br>
+                    <input type="checkbox">Badminton<br>
+                    <input type="checkbox">Cricket<br>
+                    <input type="checkbox">Volleyball<br>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" checked> Male
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+            <tr>
+                <td><label>Select your Age</label></td>
+                <td>
+                    <select id="age">
+                        <option>Select</option>
+                        <option value="10-20">10-20</option>
+                        <option value="21-30">21-30</option>
+                        <option value="31-40">31-40</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="file"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button>Click Me</button>
+                    <button>Reset</button>
+                    <button>Submit Form</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+.bg {
+	margin: 28px 35px;
+	margin-bottom: 0;
+	background-color: rgb(243, 209, 214);
+	border: 1px solid rgb(224, 56, 56);
+}
+
+.container {
+	padding: 0;
+}
+
+h1 {
+	font-family: cursive;
+	text-align: center;
+	background-color: rgb(187, 74, 74);
+	color: white;
+	padding: 10px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.form1 {
+	margin: 10px 20px;
+	padding: 10px;
+	border-top: 5px solid grey;
+	border-left: 5px solid grey;
+	border-bottom: 5px solid rgb(0, 0, 0);
+	border-right: 5px solid rgb(0, 0, 0);
+	width: 400px;
+	background-color: rgb(247, 217, 174);
+}
+
+.form1 input,
+textarea {
+	border: white;
+	margin: 5px 0;
+	width: 95%;
+	padding: 10px;
+}
+
+textarea {
+	height: 90px;
+}
+
+.form1 button {
+	background-color: rgb(255, 230, 0);
+	border: 2px solid black;
+	width: 100%;
+	padding: 10px;
+}
+
+.form2 {
+	margin: 10px 20px;
+	margin-bottom: 55px;
+}
+
+td {
+	padding: 4px 10px;
+	padding-right: 18px;
+}
+
+table,
+td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+.thead p {
+	margin: 5px;
+}

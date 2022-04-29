@@ -1,0 +1,56 @@
+.table1 {
+	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	border-collapse: separate;
+	border-spacing: 7px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.table1 th,
+.table1 td {
+	border: 1px solid black;
+	padding: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.table2 {
+	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	width: 61%;
+	border-collapse: collapse;
+}
+
+.table2 th,
+.table2 td {
+	border: 2px solid black;
+	font-size: 22px;
+	padding: 0;
+	text-align: center;
+}
+
+.heading td {
+	font-size: 24px;
+	padding-top: 0;
+	padding-bottom: 12px;
+}
+
+.bggray {
+	background-color: rgb(165, 164, 164);
+}
+
+.days td {
+	padding-bottom: 0;
+}
+
+.friday td {
+	padding-bottom: 0;
+}
+
+.lunch {
+	width: 115px;
+}

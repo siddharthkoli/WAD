@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset=utf-8 />
+    <title>Q5</title>
+
+    <style>
+        body {
+            margin: 25px;
+            background-color: bisque;
+        }
+
+        #firstNum,
+        #secondNum {
+            padding: 7px;
+            margin: 6px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        Enter 1st Number : <input type="text" id="firstNum" /><br>
+        Enter 2nd Number: <input type="text" id="secondNum" /><br>
+        Enter 3rd Number: <input type="text" id="thirdNum" /><br>
+        <input type="button" onClick="greatest()" Value="Greatest" />
+    </form>
+
+
+</body>
+
+<script>
+    function greatest() {
+        var num1, num2, num3;
+        num1 = Number(document.getElementById("firstNum").value);
+        num2 = Number(document.getElementById("secondNum").value);
+        num3 = Number(document.getElementById("thirdNum").value);
+
+        if (num1 > num2 && num1 > num3) {
+            window.alert(num1 + " is greatest");
+        }
+        else if (num2 > num1 && num2 > num3) {
+            window.alert(num2 + " is greatst");
+        }
+        else if (num3 > num1 && num3 > num1) {
+            window.alert(num3 + " is greatest");
+        }
+    }
+
+</script>
+
+</html>

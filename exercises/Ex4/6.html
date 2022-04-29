@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset=utf-8 />
+    <title>Q6</title>
+
+    <style>
+        body {
+            margin: 25px;
+            background-color: bisque;
+        }
+
+        #firstNum,
+        #secondNum {
+            padding: 7px;
+            margin: 6px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        Enter age : <input type="text" id="age" /><br>
+        <input type="button" onClick="check()" Value="Check" />
+    </form>
+
+</body>
+
+<script>
+    function check() {
+        var num1;
+        num1 = Number(document.getElementById("age").value);
+
+        if (num1 > 18) {
+            window.alert(num1 + " is greater than 18");
+        }
+        else if (num1 < 18) {
+            window.alert(num1 + " is less than 18");
+        }
+        else if (num1 === 18) {
+            window.alert(num1 + " is equal to 18");
+        }
+    }
+
+</script>
+
+</html>

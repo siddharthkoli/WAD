@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Q4</title>
+</head>
+
+<style>
+    body {
+        margin: 25px;
+        background-color: bisque;
+    }
+
+    #firstNum,
+    #secondNum {
+        padding: 7px;
+        margin: 6px;
+    }
+</style>
+
+<body>
+    <input type="number" placeholder="first number" id="first" />
+
+    <select name="options" id="options">
+        <option value="sum">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="div">/</option>
+    </select>
+    <input type="number" placeholder="second number" id="second" />
+    =
+    <span id="output"> </span>
+    <button type="button" onclick="calculate() ">Answer</button>
+
+    <script>
+        function calculate() {
+            let a = parseInt(document.getElementById("first").value);
+            let b = parseInt(document.getElementById("second").value);
+            let val = document.getElementById("options").value;
+            if (val == "sum") {
+                document.getElementById("output").innerHTML = a + b;
+            } else if (val == "sub") {
+                document.getElementById("output").innerHTML = a - b;
+            } else if (val == "mul") {
+                document.getElementById("output").innerHTML = a * b;
+            } else if (val == "div") {
+                document.getElementById("output").innerHTML = a / b;
+            }
+        }
+    </script>
+</body>
+
+</html>

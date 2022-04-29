@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>
+            User Form
+        </title>
+        <style>
+            table {
+               margin-left: auto;
+               margin-right: auto;
+            }
+            th,
+            td {
+                padding: 10px;
+                padding-left: 10px;
+            }
+    
+            tr {
+                padding: 30px;
+            }
+            fieldset {
+                border: 5px solid black;
+                background-color: rgb(24, 241, 97);
+                margin-left: 500px;
+                margin-right: 400px;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(157, 255, 0); font-family: Comic Sans MS, Comic Sans, cursive;">
+        <form>
+            <fieldset>
+                <legend style="text-align: center;">USER FORM</legend>
+            <table>
+                <tr>
+                    <td>FIRST NAME</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>PASSWORD</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>GENDER</td>
+                    <td>
+                        <input type="radio" name="male" selected>Male</input>
+                        <input type="radio" name="female">Female</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ADDRESS</td>
+                    <td>
+                        <textarea name="address" rows=5 cols=20></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>D.O.B</td>
+                    <td>
+                        <select name="month">
+                            <option name="Jan">Jan</option>
+                            <option name="Feb">Feb</option>
+                            <option name="Mar">Mar</option>
+                            <option name="Apr">Apr</option>
+                            <option name="May">May</option>
+                            <option name="June">June</option>
+                            <option name="July">July</option>
+                            <option name="Aug">Aug</option>
+                            <option name="Sept">Sept</option>
+                            <option name="Oct">Oct</option>
+                            <option name="Nov">Nov</option>
+                            <option name="Dec">Dec</option>
+                        </select>
+                        <select name="date">
+                            <option name="1">1</option>
+                            <option name="2">2</option>
+                            <option name="3">3</option>
+                            <option name="4">4</option>
+                            <option name="5">5</option>
+                            <option name="6">6</option>
+                            <option name="7">7</option>
+                            <option name="8">8</option>
+                            <option name="9">9</option>
+                            <option name="10">10</option>
+                            <option name="11">11</option>
+                            <option name="12">12</option>
+                            <option name="12">13</option>
+                            <option name="14">14</option>
+                            <option name="15">15</option>
+                            <option name="16">16</option>
+                            <option name="17">17</option>
+                            <option name="18">18</option>
+                            <option name="19">19</option>
+                            <option name="20">20</option>
+                            <option name="21">21</option>
+                            <option name="22">22</option>
+                            <option name="23">23</option>
+                            <option name="24">24</option>
+                            <option name="25">25</option>
+                            <option name="26">26</option>
+                            <option name="27">27</option>
+                            <option name="28">28</option>
+                            <option name="29">29</option>
+                            <option name="30">30</option>
+                            <option name="31">31</option>
+                        </select>
+                        <select name="year">
+                            <option name="1995">1995</option>
+                            <option name="1996">1996</option>
+                            <option name="1997">1997</option>
+                            <option name="1998">1998</option>
+                            <option name="1999">1999</option>
+                            <option name="2000">2000</option>
+                            <option name="2001">2001</option>
+                            <option name="2002">2002</option>
+                            <option name="2003">2003</option>
+                            <option name="2004">2004</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SELECT GAMES</td>
+                    <td> 
+                        <input type = "checkbox" id="hockey">Hockey</input>
+                        <input type = "checkbox" id="football">Football</input>
+                        <input type = "checkbox" id="cricket">Cricket</input>
+                        <input type = "checkbox" id="volleyball">Volleyball</input>  
+                    </td>
+                </tr>
+                <tr>
+                    <td>MARITAL STATUS</td>
+                    <td>
+                        <input type="radio" name="married" selected>Married</input>
+                        <input type="radio" name="unmarried">Unmarried</input>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2>
+                        <p style="text-align: center;"><button id="submit">Submit</button><button id="reset">Reset</button></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan = 2>
+                       <p style="text-align: center;"> <input type="checkbox">I accept this agreement.</p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        </form>
+    </body>
+</html>

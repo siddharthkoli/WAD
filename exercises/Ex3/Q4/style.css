@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navbar {
+    padding-top: auto;
+    padding-bottom: auto;
+    width: 100%;
+    background-color: #122b61;
+}
+
+.logo {
+    display: block;
+    padding: 32px 0;
+}
+
+#content {
+    margin: 0 auto;
+    width: 980px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: tahoma, verdana, arial, sans-serif;
+    margin: 0;
+}
+
+#button {
+    position: relative;
+    background-color: #ffffff;
+    width: 40px;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+}
+
+.row1 {
+    color: #fff;
+    font-size: 11px;
+    width: 164px;
+    cursor: pointer;
+}
+
+.row2 {
+    color: #ffffff;
+    font-size: 12px;
+    padding-top: 0;
+    cursor: pointer;
+}
+
+#left {
+    width: 565px;
+    display: inline-block;
+}
+
+#right {
+    display: inline-block;
+    vertical-align: top;
+    width: 399px;
+    height: 200px;
+}
+
+.connect {
+    display: inline-block;
+    width: 500px;
+    font-size: 24px;
+    padding: 10px 0 10px;
+    color: rgb(15, 16, 29);
+}
+
+.form {
+    display: inline-block;
+    width: 350px;
+}
+
+.input {
+    color: rgb(153, 151, 151);
+    font-size: 10px;
+    margin: 0;
+    padding: 3px;
+    width: 146px;
+    border: 1px solid #bdc7d8;
+}
+
+.input2 {
+    display: inline-block;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 0.5px solid #000000;
+    border-radius: 10px;
+    color: #333;
+}
+
+.date {
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 0.5px solid #000000;
+    border-radius: 10px;
+}
+
+.gender {
+    font-size: 18px;
+    color: #141823;
+    cursor: pointer;
+    padding: 0 10px 0 3px;
+    margin-right: 4px;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.signup {
+    font-size: 15px;
+    color: #fff;
+    min-width: 60px;
+    padding: 7px 20px;
+    text-align: center;
+    background-color: green;
+    cursor: pointer;
+    border: 0.2 solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.signup:hover {
+    background-color: rgb(33, 207, 27);
+}
+
+.link a {
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(33, 33, 150);
+}
+
+.link {
+    margin-top: 10px;
+}

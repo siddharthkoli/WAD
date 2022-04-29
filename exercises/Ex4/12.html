@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>Question12:Calculator</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            width: fit-content;
+        }
+
+        table {
+            padding: 5px;
+        }
+
+        .display {
+            height: 40px;
+            width: 250px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        td input {
+            font-size: 15px;
+            padding: 5px;
+            height: 30px;
+            width: 40px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h3>Online Calculator</h3>
+        <div class="container">
+            <table>
+                <tr>
+                    <td colspan="5"><input class="display" type="text" id="inputData"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="get_value('1')"></td>
+                    <td><input type="button" value="2" onclick="get_value('2')"></td>
+                    <td><input type="button" value="3" onclick="get_value('3')"></td>
+                    <td><input type="button" value="+" onclick="get_value('+')"></td>
+                    <td><input type="button" value="Del" onclick="del()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="get_value('4')"></td>
+                    <td><input type="button" value="5" onclick="get_value('5')"></td>
+                    <td><input type="button" value="6" onclick="get_value('6')"></td>
+                    <td><input type="button" value="-" onclick="get_value('-')"></td>
+                    <td><input type="button" value="X^2" onclick="square()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="get_value('7')"></td>
+                    <td><input type="button" value="8" onclick="get_value('8')"></td>
+                    <td><input type="button" value="9" onclick="get_value('9')"></td>
+                    <td><input type="button" value="*" onclick="get_value('*')"></td>
+                    <td><input type="button" value="X^3" onclick="cube()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Cls" onclick="cls()"></td>
+                    <td><input type="button" value="0" onclick="get_value('0')"></td>
+                    <td><input type="button" value="=" onclick="solve()"></td>
+                    <td><input type="button" value="/" onclick="get_value('/')"></td>
+                    <td><input type="button" value="Sqrt" onclick="sqrt()"></td>
+                </tr>
+
+            </table>
+        </div>
+    </center>
+
+</body>
+
+<script>
+    function get_value(val) {
+        document.getElementById("inputData").value += val;
+    }
+    function solve() {
+
+        let exp = document.getElementById("inputData").value;
+        let ans = eval(exp);
+        document.getElementById("inputData").value = ans;
+    }
+    function del() {
+        let exp = document.getElementById("inputData").value;
+        if (exp.length > 0)
+            document.getElementById("inputData").value = exp.slice(0, -1);
+    }
+    function cls() {
+        document.getElementById("inputData").value = "";
+    }
+    function square() {
+        let exp = document.getElementById("inputData").value;
+        let sq = exp * exp;
+        document.getElementById("inputData").value = sq;
+
+    }
+    function cube() {
+        let exp = document.getElementById("inputData").value;
+        let cb = exp * exp * exp;
+        document.getElementById("inputData").value = cb;
+
+    }
+    function sqrt() {
+        let exp = document.getElementById("inputData").value
+        let srt = Math.sqrt(exp)
+        document.getElementById("inputData").value = srt;
+    }
+</script>
+
+</html>
