@@ -1,0 +1,47 @@
+<div class="row justify-content-center align-items-center  login-container">
+            
+    <div>
+        <div class="card bg-light " style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center ">
+                <div style="display: inline-flex;">
+                    <img src="assets/logo.png" class="logo">
+                    <h2 style="color: rgb(10, 63, 43); text-decoration: underline;">Go Green Grocery Store</h2>
+                </div>
+                <p class="tagline">Buy fresh veggies and stay healthy</p>
+                
+                
+                <form onsubmit="submitForm()" >
+                    <div class="form-outline form-white mb-4">
+                        <input [(ngModel)] = "name" type="text" name="fname" id = "fname" placeholder="Full Name" class="form-control form-control-lg">
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                        
+                        <input [(ngModel)] = "email" type="text" name="email" placeholder="Email" class="form-control form-control-lg">
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                        
+                        <input [(ngModel)] = "mobile" type="text" name="mblno" placeholder="Mobile No." class="form-control form-control-lg">
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                        
+                        <textarea [(ngModel)] = "address"  rows="2" cols="30" placeholder="Address" class="form-control form-control-lg"></textarea>
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                        <input [(ngModel)] = "password"  type="password" name="password" placeholder="Password" class="form-control form-control-lg">
+                    </div>
+                    
+                    <p><a routerLink="login">Already Have Account?</a></p>
+                    <div class="form-group">
+                        
+                            <button (click) = "register()" class="btn btn-success btn-lg px-5" type="submit">Sign Up</button>
+                      
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+</div>
+<router-outlet></router-outlet>
